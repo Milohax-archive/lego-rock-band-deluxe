@@ -18,6 +18,14 @@
    main_menu
    (file
       "main_menu.milo")
+   (enter
+      (load
+         {content_mgr start_refresh}
+         {content_loading_panel allowed_to_show TRUE})
+      (finish_load
+         {content_loading_panel allowed_to_show FALSE})
+   (is_loaded
+      {content_mgr refresh_done}))
    (SELECT_MSG
       {switch
          $component
