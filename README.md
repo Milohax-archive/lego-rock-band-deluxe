@@ -223,7 +223,7 @@ You can also use [**Onyx Music Game Toolkit**](https://github.com/mtolly/onyxite
 
 ![Repo Folder](dependencies/images/repofolder.png)
 
-***The LEGO Rock Band Deluxe repo is now set up!*** You can now return to [**Installing on Xenia (Advanced)**](#installing-on-xenia-advanced) or [**Custom Textures**](#custom-textures).
+***The LEGO Rock Band Deluxe repo is now set up!*** You can now return to [**Installing on Xenia (Advanced)**](#installing-on-xenia-advanced).
 
 # Dependencies
 
