@@ -383,13 +383,13 @@
          {set $song_text2 {sprint $song_text1 " (" {int {'+' 0.5 {'*' $speedmod 100}}} "%)"}}
          {set $song_text2 $song_text1}}
       {heading.lbl set_localized $song_text2}
-         {if_else
-            {gamemode get is_challenge}
-            {localize
-               {challenge_mgr get_name}}
-            {song_mgr
-               song_name
-               {meta_performer completed_song}}}
+         ;{if_else
+         ;   {gamemode get is_challenge}
+         ;   {localize
+         ;      {challenge_mgr get_name}}
+         ;   {song_mgr
+         ;      song_name
+         ;      {meta_performer completed_song}}}
       {if
          {!
             {gamemode is_h2h_arrangement}}
@@ -576,7 +576,7 @@
                            set_localized
                            {if_else
                               {modifier_mgr is_modifier_active mod_auto_play}
-                              "autoplay"
+                              {localize mod_auto_play}
                            {sprintf
                               {localize endgame_player_noteshit_fmt}
                               {int
@@ -588,13 +588,9 @@
                         {$pxy exists streak.lbl}
                         {{$pxy find streak.lbl}
                            set_localized
-                           {if_else
-                              {if_else {modifier_mgr is_modifier_active mod_auto_play}
+                           {if_else {modifier_mgr is_modifier_active mod_auto_play}
                                  {localize endgame_player_audition_autoplayer}
-                              {==
-                                 {{$pcfg player}
-                                    instrument}
-                                 vocals}
+                                 {if_else {== {{$pcfg player} instrument} vocals}
                               {sprintf
                                  {localize endgame_phrase_streak}
                                  {{$pcfg player}
