@@ -48,7 +48,7 @@
         "practice/practice_sel_section.milo")
     (focus sel_section.lst)
     (enter
-        {sel_section.lst set_data (os_clr os_gems os_smashers os_strk os_spotlight os_angle)}
+        {sel_section.lst set_data (os_clr os_angle)}
         {title.lbl set_localized {localize os_trkset}})
     (exit)
     (SELECT_MSG
@@ -99,7 +99,8 @@
     (focus sel_section.lst)
     (enter
         {sel_section.lst set_data
-            (#include ../../track/gems/gems.dta)}
+        }
+      ;      (#include ../../track/gems/gems.dta)}
         {title.lbl set_localized {localize os_gems}})
     (exit)
     (SELECT_MSG
@@ -134,7 +135,8 @@
     (focus sel_section.lst)
     (enter
         {sel_section.lst set_data
-            (#include ../../track/smashers/smashers.dta)}
+        }
+      ;      (#include ../../track/smashers/smashers.dta)}
         {title.lbl set_localized {localize os_smashers}})
     (exit)
     (SELECT_MSG
@@ -169,7 +171,8 @@
     (focus sel_section.lst)
     (enter
         {sel_section.lst set_data
-            (#include ../../track/streak/streak.dta)}
+        }
+      ;      (#include ../../track/streak/streak.dta)}
         {title.lbl set_localized {localize os_strk}})
     (exit)
     (SELECT_MSG
@@ -204,7 +207,8 @@
     (focus sel_section.lst)
     (enter
         {sel_section.lst set_data
-            (#include ../../track/spotlight/spotlight.dta)}
+        }
+      ;      (#include ../../track/spotlight/spotlight.dta)}
         {title.lbl set_localized {localize os_spotlight}})
     (exit)
     (SELECT_MSG

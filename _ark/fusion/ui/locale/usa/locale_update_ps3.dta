@@ -528,9 +528,9 @@
 (loading_trivia898 "Before playing local pubs, \qThe Cure\q would play dances at their Methodist church, where they were members of the youth club.")
 (loading_trivia899 "They chose their band name using a technique one of their heroes, David Bowie, sometimes used to compose lyrics: cutting up phrases and selecting one randomly.")
 (main_store
-   "DX OPTIONS")
+   "DELUXE SETTINGS")
 (dx_dxoptions
-   "DX OPTIONS")
+   "SPEED / FRAMERATE")
 (dx_creditsbutton
    "test")
 (dx_modifygamebutton
@@ -540,7 +540,7 @@
 (trackspeed_msg
    "NOTE SPEED: %d%%")
 (fps_msg
-   "VENUE FRAMERATE: %dFPS")
+   "VENUE FPS: %dFPS")
 (dlc_elf "Elf")
 			(dlc_santa "Santa")
 			(dlc_snowman "Snowman")
@@ -561,11 +561,11 @@
 			(santa_legs "Santa Legs")
 			(snowman_legs "Snowman Legs")
 
-(gemcolor_0 "green") ;strings for gem colors and related shit
-(gemcolor_1 "red")
-(gemcolor_2 "yellow")
-(gemcolor_3 "blue")
-(gemcolor_4 "orange")
+(gemcolor_0 "Green") ;strings for gem colors and related shit
+(gemcolor_1 "Red")
+(gemcolor_2 "Yellow")
+(gemcolor_3 "Blue")
+(gemcolor_4 "Orange")
 
 (colrsliderlbl "Note Colors")
 (tweak_modify "tweaks")
@@ -577,13 +577,13 @@
 (trackspeed_msg
    "NOTE SPEED: %d%%")
 (fps_msg
-   "VENUE FRAMERATE: %dFPS")
+   "VENUE FPS: %dFPS")
 (extra_modify
    "Modifiers")
 (speed_modify
    "speed / framerate")
 (options_audio
-   "audio settings")
+   "Note Colors")
 ;overshell
 (os_clr "Note Colors")
 (os_spd "Set Speeds")
@@ -593,7 +593,7 @@
 (os_strk "Streak")
 (os_spotlight "Overdrive")
 (os_trkset "Track Options")
-(os_dxsettings "DELUXE SETTINGS")
+(os_dxsettings "Deluxe Settings")
 (os_angle "Track Angle")
 ; track settings
 (rb1 "Rock Band 1")
@@ -667,6 +667,10 @@
    "Forces Guitar on every instrument *Alpha")
 (mod_forceguitar_obtain 
    "(bug, should be available by default)")
+(mod_noquickrestart
+   "No SELECT in Practice")
+(mod_noquickrestart_desc
+   "Disables the quick restart in Practice mode")
 (mod_flashbang 
    "Firework Gems")
 (mod_flashbang_desc 

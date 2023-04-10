@@ -104,10 +104,10 @@
          [focus_btn]}
       {meta music_load_and_start}
       {meta fade_meta_music 0}
-      #ifdef HX_WII
+   ;   #ifdef HX_WII
       {$this disable store.btn}
       {store.btn set_showing FALSE}
-      #endif
+   ;   #endif
       {input_mgr clear_ui_leader}
       #ifdef KIOSK_DEMO
       {if
