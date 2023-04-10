@@ -41,11 +41,11 @@
 
 ;custom track scaling/angles/rotation
 ;highly experimental, don't edit unless you know what you're doing
-{set $trackangle TRUE}
+{set $trackangle FALSE}
 
 ;track angle presets that closely match the source games
 ;available options: "rb2", "rb3", "rb4", "rr" "none"
-{set $anglepreset "rb3"}
+{set $anglepreset "rb2"}
 ;set to "none" if you want to manually edit the numbers below
 
 ;the default angles set here is rb3's
