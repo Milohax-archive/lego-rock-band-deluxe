@@ -9,6 +9,7 @@
    (allow_home_menu TRUE)
    #endif
    (enter
+      {modifiers.lst set scroll_time 0}
       {modifiers.lst set circular 1}
       {$this set is_autoloading FALSE}
       {modifiers.lst set_provider modifier_mgr}
