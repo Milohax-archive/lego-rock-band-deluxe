@@ -641,6 +641,7 @@
    (clear_setlist FALSE)
    (saved_setlist FALSE)
    (enter
+      {set $iamingamenow FALSE}
       {song.lst set scroll_time 0}
       #ifdef KIOSK_DEMO
       {if

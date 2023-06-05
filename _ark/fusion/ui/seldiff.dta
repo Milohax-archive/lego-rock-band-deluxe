@@ -881,6 +881,7 @@
       $ret_val)
    #include ../config/song_overrides.dta
    (start_loading
+      {set $iamingamenow TRUE}
       #ifdef KIOSK_DEMO
       {if_else
          {challenge_mgr has_challenge}

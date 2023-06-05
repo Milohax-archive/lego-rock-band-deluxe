@@ -15,6 +15,7 @@
       "../../world/hub/hub_create.milo")
    (postprocess hub_video.pp)
    (enter
+      {set $iamingamenow FALSE}
       {rnd reset_postproc}
       {$this refresh}
       {meta music_stop}

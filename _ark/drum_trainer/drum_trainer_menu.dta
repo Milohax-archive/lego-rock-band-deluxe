@@ -4,6 +4,8 @@
    (file
       "drum_trainer_menu.milo")
    (focus beats.btn)
+   (enter
+      {set $iamingamenow FALSE})
    (tour_practice FALSE)
    #ifdef HX_WII
    (allow_home_menu TRUE)
@@ -80,7 +82,9 @@
                [tour_practice]
                FALSE}
             {ui goto_screen drum_trainer_loading_screen}}
-         {ui push_screen drum_trainer_non_drum_warning_screen}})
+         {ui push_screen drum_trainer_non_drum_warning_screen}}
+         {set $iamingamenow TRUE}
+         {modifier_mgr deactivate_modifier mod_blackvenue})
    (add_local_user_result_msg
       ($success $user)
       {if

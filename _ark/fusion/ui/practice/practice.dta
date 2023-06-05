@@ -91,6 +91,7 @@
    (file practice_sel_section.milo)
    (focus sel_section.lst)
    (enter
+      {set $iamingamenow FALSE}
       {gamecfg set_section 0 -1}
       {gamecfg set_section 1 -1}
       {sel_section.lst set_provider practice_section_provider}
@@ -260,6 +261,7 @@
          TRUE}
       {gamecfg set_active_roster TRUE}
       {synth play button_select}
+      {set $iamingamenow TRUE}
       {ui goto_screen practice_loading_screen})
    (FOCUS_MSG DO_FOCUSCLICK kDataUnhandled)
    (BUTTON_DOWN_MSG DEFAULT_BACK_SOUND kDataUnhandled)}
