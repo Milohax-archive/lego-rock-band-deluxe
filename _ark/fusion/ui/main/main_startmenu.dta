@@ -33,38 +33,6 @@
 {set $track_fade_start 70} ;start point of the fadeout at the end of the track
 {set $track_fade_length 50} ;length of the fadeout at the end of the track
 }
-{switch $anglepreset
-   ("rb2"
-      {set $trackangle FALSE}
-   )
-   ("rb3"
-      {set $trackangle TRUE}
-      {set $track_pitch -41}
-      {set $track_fov 19}
-      {set $track_y_pos -100}
-      {set $track_z_pos 22}
-      {set $track_fade_start 70}
-      {set $track_fade_length 50}
-   )
-   ("rb4"
-      {set $trackangle TRUE}
-      {set $track_pitch -40.5}
-      {set $track_fov 21}
-      {set $track_y_pos -112.5}
-      {set $track_z_pos 26.51}
-      {set $track_fade_start 90}
-      {set $track_fade_length 30}
-   )
-   ("rr"
-      {set $trackangle TRUE}
-      {set $track_pitch -90}
-      {set $track_fov 19}
-      {set $track_y_pos -165}
-      {set $track_z_pos 36}
-      {set $track_fade_start 15}
-      {set $track_fade_length 45}
-   )
-}
 )
 #define INIT_DTA_READER
 (
@@ -200,6 +168,43 @@
    }
 )
 ;{unless {file_exists dx.dta} INIT_DTA_WRITER}
+
+#define INIT_TRACKANGLE
+(
+{switch $anglepreset
+   ("rb2"
+      {set $trackangle FALSE}
+   )
+   ("rb3"
+      {set $trackangle TRUE}
+      {set $track_pitch -41}
+      {set $track_fov 19}
+      {set $track_y_pos -100}
+      {set $track_z_pos 22}
+      {set $track_fade_start 70}
+      {set $track_fade_length 50}
+   )
+   ("rb4"
+      {set $trackangle TRUE}
+      {set $track_pitch -40.5}
+      {set $track_fov 21}
+      {set $track_y_pos -112.5}
+      {set $track_z_pos 26.51}
+      {set $track_fade_start 90}
+      {set $track_fade_length 30}
+   )
+   ("rr"
+      {set $trackangle TRUE}
+      {set $track_pitch -90}
+      {set $track_fov 19}
+      {set $track_y_pos -165}
+      {set $track_z_pos 36}
+      {set $track_fade_start 15}
+      {set $track_fade_length 45}
+   )
+}
+)
+
 #define DEFAULT_SPLASH_ALPHA_THRESHOLD
 (175.0)
 {new
@@ -427,6 +432,7 @@
             {set $already_entered TRUE}
             INIT_MODIFIERS
             INIT_DTA_READER
+            INIT_TRACKANGLE
             {set $leaderspeed $speedmod}
          }
       }
